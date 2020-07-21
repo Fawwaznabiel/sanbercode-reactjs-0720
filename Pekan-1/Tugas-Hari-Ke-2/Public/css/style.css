@@ -17,11 +17,7 @@ h3{
     font-size: 18px;
 }
 
-p{
-    opacity: 75%;
-    color: #333333;
-    font-size: 16px;
-}
+
 
 a{
     text-decoration: none;
@@ -35,6 +31,7 @@ header{
     padding: 16;
     position: sticky;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: auto;
 }
 
 /* Navigation */
@@ -67,7 +64,7 @@ nav li {
 section{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: fit-content;
+  
     display: block;
     position: center;
     padding: 20px;
@@ -77,22 +74,23 @@ section{
     margin-right: 15%;
 }
 
-section div{
-    padding: 16px;
-}
-
 #article-list {
-    margin:20px;
+    margin-top:20px;
     text-align: justify;
-    padding: 8px;
     background-color: rgb(255, 255, 255);
 }
 
-#article-list div p{
-    padding-bottom: 32px;
-    border-bottom: 1px solid #979797;
+#article-list div{
+    padding: 20px 10px;
 }
-/* css contact.html */
+
+#article-list div p{
+    font-size: 18px;
+    color: #494949;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333333;
+}
+/* css contact.html*/
 #hubungi{
     list-style-type: none;
 }
@@ -120,6 +118,8 @@ input[type=submit]:hover {
     background-color: rgb(13, 13, 116);
   }
 
+
+
 label {
     padding-left: 36px;
     padding-top: 12px;
@@ -128,36 +128,37 @@ label {
     display: inline-block;
   }
   
+ 
 .kolom-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
   }
   
-.kolom-75 {
+  .kolom-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
   }
   
-.row a{
+  .row a{
     text-decoration: none;
     color: #333333;
     opacity: 75%;
-  }
-  
-.row:after {
+}
+
+  /* Clear floats after the columns */
+  .row:after {
     content: "";
     display: table;
     clear: both;
   }
-/* css about.html */
+
  .btn{
     background-color: rgb(11, 172, 236);
     border: none;
     color: white;
     padding: 12px 20px; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
     border-radius: 4px;
     margin: 6px;
     float: right;
@@ -181,6 +182,16 @@ footer{
     width: 100%;
     color: white;
     background-color: #131313;
-    text-align: center;
-    
+    text-align: center;      
+}
+
+.style2{
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #131313;
+    text-align: center;      
+    position: fixed;
 }
