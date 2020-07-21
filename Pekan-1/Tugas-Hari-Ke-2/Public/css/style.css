@@ -30,11 +30,14 @@ a{
 header{
     background-color: white;
     left: 0;
+    top: 0;
+    right: 0;
     padding: 16;
     position: sticky;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* Navigation */
 nav{
     padding: 5px;
     top: 0;
@@ -59,11 +62,13 @@ nav li {
     list-style-type: none;
     margin: 32px;
  }
+/* end Navigation */
 
 section{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     height: fit-content;
+    display: block;
     position: center;
     padding: 20px;
     margin-top: 16px;
@@ -71,10 +76,10 @@ section{
     margin-left: 15%;
     margin-right: 15%;
 }
-#hubungi{
-    list-style-type: none;
-}
 
+section div{
+    padding: 16px;
+}
 
 #article-list {
     margin:20px;
@@ -83,6 +88,14 @@ section{
     background-color: rgb(255, 255, 255);
 }
 
+#article-list div p{
+    padding-bottom: 32px;
+    border-bottom: 1px solid #979797;
+}
+/* css contact.html */
+#hubungi{
+    list-style-type: none;
+}
 
 input[type=text],textarea{
     width: 30%;
@@ -107,8 +120,6 @@ input[type=submit]:hover {
     background-color: rgb(13, 13, 116);
   }
 
-
-
 label {
     padding-left: 36px;
     padding-top: 12px;
@@ -117,32 +128,30 @@ label {
     display: inline-block;
   }
   
- 
 .kolom-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
   }
   
-  .kolom-75 {
+.kolom-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
   }
   
-  .row a{
+.row a{
     text-decoration: none;
     color: #333333;
     opacity: 75%;
-}
-
-  /* Clear floats after the columns */
-  .row:after {
+  }
+  
+.row:after {
     content: "";
     display: table;
     clear: both;
   }
-
+/* css about.html */
  .btn{
     background-color: rgb(11, 172, 236);
     border: none;
@@ -165,8 +174,8 @@ label {
     background-color: rgb(13, 13, 116);
   }
 
-footer{
-    position: fixed;
+footer{ 
+    padding: 20px;
     left: 0;
     bottom: 0;
     width: 100%;
