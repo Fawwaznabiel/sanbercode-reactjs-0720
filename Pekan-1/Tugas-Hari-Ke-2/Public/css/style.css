@@ -75,6 +75,7 @@ section{
     list-style-type: none;
 }
 
+
 #article-list {
     margin:20px;
     text-align: justify;
@@ -83,15 +84,32 @@ section{
 }
 
 
-input[type=text]{
-    width: 25%;
+input[type=text],textarea{
+    width: 30%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    resize: vertical;
   }
 
-  label {
+input[type=submit] {
+    background-color: rgb(11, 172, 236);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 36px;
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+
+input[type=submit]:hover {
+    background-color: rgb(13, 13, 116);
+  }
+
+
+
+label {
     padding-left: 36px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -100,7 +118,7 @@ input[type=text]{
   }
   
  
-  .kolom-25 {
+.kolom-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
@@ -112,75 +130,40 @@ input[type=text]{
     margin-top: 6px;
   }
   
+  .row a{
+    text-decoration: none;
+    color: #333333;
+    opacity: 75%;
+}
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
 
-
-/* .btn{
+ .btn{
     background-color: rgb(11, 172, 236);
     border: none;
     color: white;
-    padding: 12px 16px; 
-    font-size: 16px; 
+    padding: 12px 20px; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
     border-radius: 4px;
-    transition: all 0.5s;
     margin: 6px;
     float: right;
-    
     cursor: pointer;
 }
-
 .btn a{
     text-decoration: none;
     color: white;
 }
-
-.btn span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  .btn:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: -20px;
-    transition: 0.5s;
-  }
-  
-  .btn:hover span {
-    padding-left: 25px;
-  }
-  
-  .btn:hover span:after {
-    opacity: 1;
-    left: 0;
-  }
+.btn a:hover{
+    color: white;
+}
 .btn:hover {
     background-color: rgb(13, 13, 116);
   }
-*/
 
 footer{
     position: fixed;
