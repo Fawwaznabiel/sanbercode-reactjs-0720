@@ -31,6 +31,7 @@ header{
     background-color: white;
     padding: 16;
     position: sticky;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 nav{
@@ -62,9 +63,21 @@ nav li {
 section{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
+    height: fit-content;
+
+    position: center;
     padding: 20px;
-    margin: 20px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#article-list {
+    margin:20px;
+    text-align: justify;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -73,4 +86,5 @@ footer{
     color: white;
     background-color: #131313;
     text-align: center;
+    
 }
