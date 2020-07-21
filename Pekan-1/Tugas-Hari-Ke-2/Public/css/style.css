@@ -29,6 +29,7 @@ a{
 
 header{
     background-color: white;
+    left: 0;
     padding: 16;
     position: sticky;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -36,7 +37,6 @@ header{
 
 nav{
     padding: 5px;
-    position: sticky;
     top: 0;
     float: right;
   
@@ -47,11 +47,11 @@ nav a {
     font-weight: 400;
     text-decoration: none;
     color: #333333;
-    float: right;
- }
+}
 
 nav a:hover{
     font-weight: bold;
+    color: rgb(0, 183, 255);
 }
 
 nav li {
@@ -72,6 +72,9 @@ section{
     margin-left: 15%;
     margin-right: 15%;
 }
+#hubungi{
+    list-style-type: none;
+}
 
 #article-list {
     margin:20px;
@@ -82,7 +85,10 @@ section{
 
 
 footer{
-    padding: 8px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     color: white;
     background-color: #131313;
     text-align: center;
