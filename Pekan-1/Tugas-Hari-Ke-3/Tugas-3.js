@@ -5,7 +5,10 @@ var kataKedua = "senang";
 var kataKetiga = "belajar";
 var kataKeempat = "javascript";
 
-console.log(kataPertama, kataKedua, kataKetiga, kataKeempat)
+var capitalize = kataKedua.charAt(0).toUpperCase()+kataKedua.slice(1);
+var full = kataKeempat.toUpperCase();
+
+console.log(kataPertama, capitalize, kataKetiga, kataKeempat);
 
 //soal nomor 2*
 
