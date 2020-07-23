@@ -42,7 +42,7 @@ console.log('--- SOAL NOMOR 3 ---');
 var i;
 var j;
 n = 6
-var ins = 1;
+var ins = " ";
 for(i=0;i<=n;i++){
     for(j=1;j<=i;j++){
         ins += "#";
