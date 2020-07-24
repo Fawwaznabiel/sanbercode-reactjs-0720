@@ -5,6 +5,7 @@ function halo(){
     return "Halo Sanbers!";
 }
 console.log(halo());
+console.log();
 
 //Soal Nomor 2
 
@@ -16,6 +17,7 @@ var num1 = 12
 var num2 = 4
 var hasilKali = kalikan(num1,num2)
 console.log(hasilKali)
+console.log();
 
 //Soal Nomor 3
 
@@ -36,3 +38,4 @@ var hobby = "Gaming"
  
 var perkenalan = introduce(name, age, address, hobby)
 console.log(perkenalan)
+console.log();
