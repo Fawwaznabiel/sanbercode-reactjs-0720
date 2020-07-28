@@ -77,8 +77,14 @@ class Animal {
         this.legs = 4
         this.cold_blooded = "false"
     }
+    get canimal() {
+        return this.name
+    }
+    set canimal(x){
+        this.name = x
+    }
 }
- 
+
 var sheep = new Animal("shaun");
  
 console.log(sheep.name) // "shaun"
@@ -88,16 +94,21 @@ console.log(sheep.cold_blooded) // false
 //soal nomor 4
 console.log('--- Soal Nomor 4 ---')
 console.log()
-class Ape extends Animal {
-    constructor(name, test) {
-        super(name)
-        this.name =
-        
-        function yell(){
+class Ape extends Animal {        
+        yell() {
+            
             return console.log("Auooo")
         }
+
     }
-}
+    class Frog extends Animal {        
+        jump() {
+            
+            return console.log("hop hop")
+        }
+
+    }
+  
  
 var sungokong = new Ape("kera sakti")
 sungokong.yell() // "Auooo"
