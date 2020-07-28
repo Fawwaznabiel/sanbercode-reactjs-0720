@@ -56,16 +56,17 @@ console.log()
 
 var dataFilm = []
 var addData = {
-    nama : "Fawwaz",
+    nama : "Jono",
     durasi : 120,
     genre : "horror",
     tahun : 1998
 }
 function addmoreData(addData){
-    return addData
+    dataFilm.push(addData)
+    return dataFilm
 }
-dataFilm.push(addData)
-console.log(dataFilm)
+
+console.log(addmoreData(addData))
 
 //soal nomor 4
 console.log('--- Soal Nomor 4 ---')
@@ -83,3 +84,66 @@ var sheep = new Animal("shaun");
 console.log(sheep.name) // "shaun"
 console.log(sheep.legs) // 4
 console.log(sheep.cold_blooded) // false
+
+//soal nomor 4
+console.log('--- Soal Nomor 4 ---')
+console.log()
+class Ape extends Animal {
+    constructor(name, test) {
+        super(name)
+        this.name =
+        
+        function yell(){
+            return console.log("Auooo")
+        }
+    }
+}
+ 
+var sungokong = new Ape("kera sakti")
+sungokong.yell() // "Auooo"
+ 
+var kodok = new Frog("buduk")
+kodok.jump() // "hop hop" 
+
+
+//soal nomor 5
+console.log('--- Soal Nomor 5 ---')
+console.log()
+class Clock{
+    constructor({template}){
+        {
+            var timer;
+
+            function render() {
+                var date = new Date();
+
+                var hours = date.getHours();
+                if (hours < 10) hours = '0' + hours;
+
+                var mins = date.getMinutes();
+                if (mins < 10) mins = '0' + mins;
+
+                var secs = date.getSeconds();
+                if (secs < 10) secs = '0' +secs;
+
+                var output = template
+                    .replace('h', hours)
+                    .replace('m', mins)
+                    .replace('s', secs);
+                
+                console.log(output);
+            }
+
+            this.stop = function() {
+                clearInterval(timer);
+            };
+
+            this.start = function() {
+                render();
+                timer = setInterval(render, 1000);
+            };
+        }
+    }
+}
+var clock = new Clock({template: 'h:m:s'});
+clock.start();
