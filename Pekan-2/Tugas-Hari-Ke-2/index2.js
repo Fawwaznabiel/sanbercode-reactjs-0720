@@ -10,7 +10,7 @@ function membaca(waktu,index) {
         console.log(sisaWaktu)
         if (sisaWaktu > 0) {
             if (index + 1 < books.length){
-                return membaca(sisaWaktu + 1)
+                return membaca(sisaWaktu, index + 1)
             }
         }
     })
